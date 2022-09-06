@@ -5,16 +5,13 @@ const startCommand = (ctx) =>{
           `Welcome <b>${name}🏆</b>, How are you doing today. 
 Awesome right ♥️..
 
-We are glad to have you here.🥳🥳
+Glad to have you here.🥳🥳
 kindly Read the following instructions!
 
--- <b>To access the Bot features, click the Menu button..</b>
+-- <b>To access the Bot features, click on Menu ..</b>
 -- <b>To report errors or complains to the Developer, click the specified button..</b>
 -- <b>You can support us by sharing our Bot with your friends on WhatsApp </b>
--- <b>Inorder to receive daily updates and notifications, kindly Join Our channel..</b>
 
--- credits
-<i>RDSF AI mentoring class</i>
 `,
           {
             parse_mode:"Html",
@@ -24,10 +21,6 @@ kindly Read the following instructions!
                   {
                     text: "🚪 Menu 🚪",
                     callback_data: "menu",
-                  },
-                  {
-                    text: "📺 Channel 📺",
-                    url: "t.me/rapid_quote",
                   },
                 ],
                 [
