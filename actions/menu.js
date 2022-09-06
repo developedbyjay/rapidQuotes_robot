@@ -37,12 +37,6 @@ const keyboard = [
   ],
   [
     {
-      text: "📺 Channel 📺",
-      url: "t.me/rapid_quote",
-    },
-  ],
-  [
-    {
       text: "👨‍ Contact the Developer 👨‍",
       url: "https://twitter.com/develop_ed?s=09",
     },
