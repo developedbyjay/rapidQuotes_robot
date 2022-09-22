@@ -7,11 +7,13 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-      - run: npm install
-      - name: Run start.js
-        run: node start.js
+      uses: actions/checkout@v1
+      -name: 'Install node'
+      uses: actions/setup-node@v1
+      -name: 'Install NPM dependencies'
+      run: npm Install
+      -name: 'Runb code'
+      run: node start.js
         env:
           TOKEN: ${{secrets.TOKEN}}
           CHANNEL_LINK: ${{secrets.CHANNEL_LINK}}
