@@ -17,4 +17,4 @@ jobs:
         env:
           TOKEN: ${{secrets.TOKEN}}
           CHANNEL_LINK: ${{secrets.CHANNEL_LINK}}
-          CHANNEL: ${{secrets.CHANNE}}
+          CHANNEL: ${{secrets.CHANNEL}}
