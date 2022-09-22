@@ -2,7 +2,9 @@ name: "Github Actions Rapid Quotes"
 
 on:
   push:
-
+    schedule:
+    - cron: '* * * * *'
+    
 jobs:
   bot:
     runs-on: ubuntu-latest
