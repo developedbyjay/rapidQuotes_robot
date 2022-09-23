@@ -1,22 +1,13 @@
 name: "Github Actions Rapid Quotes"
-
-on:
-  push:
-    schedule:
-    - cron: '* * * * *'
-    
+on: [push]
 jobs:
-  bot:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v1
-      -name: 'Install node'
-      uses: actions/setup-node@v1
-      -name: 'Install NPM dependencies'
+     - uses: actions/checkout@v3
+     - uses: actions/setup-node@v12
       run: npm Install
-      -name: 'Runb code'
       run: node start.js
         env:
-          TOKEN: ${{secrets.TOKEN}}
-          CHANNEL_LINK: ${{secrets.CHANNEL_LINK}}
-          CHANNEL: ${{secrets.CHANNEL}}
+          TOKEN: ${{ secrets.TOKEN }}
+          CHANNEL_LINK: ${{ secrets.CHANNEL_LINK }}
+          CHANNEL: ${{ secrets.CHANNEL }}
